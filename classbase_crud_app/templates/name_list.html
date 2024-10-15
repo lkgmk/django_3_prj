@@ -1,0 +1,11 @@
+<h1>Name List</h1>
+<ul>
+    {% for namedetail in namedetails %}
+    <li>
+        <a href="{% url 'person-detail' namedetail.id %}">{{ namedetail.person_name }}</a>
+        <a href="{% url 'update-detail' namedetail.id %}">Edit</a>
+        <a href="{% url 'delete-detail' namedetail.id %}">Delete</a>
+    </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'create-view' %}">Add New</a>

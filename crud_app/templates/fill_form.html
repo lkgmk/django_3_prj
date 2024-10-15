@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+    <h2>Fill Forms</h2>
+
+    <form action="create" method="post">
+        {% csrf_token %}
+        <label for="fname">Id:</label><br>
+        <input type="text" id="fname" name="id"><br>
+
+        <label for="fname">Person name:</label><br>
+        <input type="text" id="fname" name="pname"><br>
+
+        <label for="lname">Country name:</label><br>
+        <input type="text" id="lname" name="cname"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    </br>
+    <a href="{% url 'show_url' %}">
+        <button>Show</button>
+    </a>
+    </br></br>
+    {{ message }}
+
+</center>
+</body>
+</html>

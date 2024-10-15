@@ -1,0 +1,141 @@
+[
+  {
+    "model": "student_app.course",
+    "pk": 1,
+    "fields": {
+      "name": "Python",
+      "year": "2015"
+    }
+  },
+  {
+    "model": "student_app.course",
+    "pk": 2,
+    "fields": {
+      "name": "Java",
+      "year": "2016"
+    }
+  },
+  {
+    "model": "student_app.course",
+    "pk": 3,
+    "fields": {
+      "name": "ReactJS",
+      "year": "2017"
+    }
+  },
+  {
+    "model": "student_app.course",
+    "pk": 4,
+    "fields": {
+      "name": "dotNet",
+      "year": "2018"
+    }
+  },
+  {
+    "model": "student_app.course",
+    "pk": 5,
+    "fields": {
+      "name": "C++",
+      "year": "2019"
+    }
+  },
+  {
+    "model": "student_app.student",
+    "pk": 1,
+    "fields": {
+      "first_name": "ravi",
+      "last_name": "sharma",
+      "courses": "5"
+    }
+  },
+  {
+    "model": "student_app.student",
+    "pk": 2,
+    "fields": {
+      "first_name": "danny",
+      "last_name": "jason",
+      "courses": "4"
+    }
+  },
+  {
+    "model": "student_app.student",
+    "pk": 3,
+    "fields": {
+      "first_name": "kapil",
+      "last_name": "trivedi",
+      "courses": "3"
+    }
+  },
+  {
+    "model": "student_app.student",
+    "pk": 4,
+    "fields": {
+      "first_name": "mangesh",
+      "last_name": "soni",
+      "courses": "2"
+    }
+  },
+  {
+    "model": "student_app.student",
+    "pk": 5,
+    "fields": {
+      "first_name": "akshay",
+      "last_name": "patil",
+      "courses": "1"
+    }
+  },
+  {
+    "model": "student_app.student",
+    "pk": 6,
+    "fields": {
+      "first_name": "Virat",
+      "last_name": "Jagtap",
+      "courses": "3"
+    }
+  },
+  {
+    "model": "student_app.grade",
+    "pk": 1,
+    "fields": {
+      "student": 1,
+      "course": 1,
+      "grade": 35
+    }
+  },
+  {
+    "model": "student_app.grade",
+    "pk": 2,
+    "fields": {
+      "student": 2,
+      "course": 2,
+      "grade": 55
+    }
+  },
+  {
+    "model": "student_app.grade",
+    "pk": 3,
+    "fields": {
+      "student": 4,
+      "course": 3,
+      "grade": 65
+    }
+  },
+  {
+    "model": "student_app.grade",
+    "pk": 4,
+    "fields": {
+      "student": 3,
+      "course": 4,
+      "grade": 75
+    }
+  },
+  {
+    "model": "student_app.grade",
+    "pk": 5,
+    "fields": {
+      "student": 5,
+      "course": 5,
+      "grade": 85
+    }
+  }
+]

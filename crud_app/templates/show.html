@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Deatails Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Table Styles */
+        table {
+          width: 50%;
+          border-collapse: collapse;
+          margin: 20px auto;
+          font-family: Arial, sans-serif;
+        }
+
+        /* Table Header Styles */
+        th {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px;
+          text-align: center;
+        }
+
+        /* Table Data Cell Styles */
+        td {
+          padding: 10px;
+          text-align: center;
+          border: 1px solid #ddd;
+        }
+
+        /* Alternating Row Background Colors */
+        tbody tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+
+        /* Hover Effect */
+        tbody tr:hover {
+          background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<center>
+<h2>Styled HTML Table</h2>
+</center>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Person_Name</th>
+        <th>Country_Name</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {% for i in data %}
+    <tr>
+        <td>{{ i.id }}</td>
+        <td>{{ i.person_name }}</td>
+        <td>{{ i.country_name }}</td>
+        <td>
+            <button><a href="{% url 'delete_url' i.id %}">Delete</a></button>
+<!--            <button><a href="{% url 'update_form_url' i.id %}">Update</a></button>-->
+            <button><a href="{% url 'update_data_2' i.id %}">Update</a></button>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    {{ id }}
+</table>
+
+</body>
+</html>
